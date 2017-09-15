@@ -141,9 +141,11 @@ jsPsych.plugins["repeat-audio"] = (function() {
     var context=jsPsych.pluginAPI.audioContext();
     var source=null;
     var audio =null;
-
+    var click_counter = 0;
 
     var replayable_audio = function onclick() {
+      click_counter +=1
+      console.log(click_counter)
       console.log('I was clicked')
       button.setAttribute('disabled', 'true');
       
@@ -294,6 +296,7 @@ jsPsych.plugins["repeat-audio"] = (function() {
       };
       if (iscorrect || !trial.force_correct || trial.correct[0] == "NA") {
         var trial_data = {
+          "replay_count":click_counter,
           "rt": response_time,
           "preamble": trial.preamble,
           "superq": trial.superq,
