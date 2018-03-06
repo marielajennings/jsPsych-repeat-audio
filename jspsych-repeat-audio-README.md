@@ -1,6 +1,6 @@
 ##jspsych-repeat-audio plugin
 
-The repeat-audio plugin allows the user to replay a sound file until they are ready to answer the quiestions shown below the replay button. The questions are presented in a multiple choice format and require a response to proceed. There can be one or multiple questions associated with the sound clip. The user has to click on the "Next" button in order to proceed after answering all the questions in the trial.
+The repeat-audio plugin allows the user to replay a sound until they are ready to answer the questions shown below the replay button. The questions are presented in a multiple choice format and require a response to proceed. There can be one or multiple questions associated with the sound clip. The user has to click on the "Next" button in order to proceed after answering all the questions in the trial.
 
 ###Parameters
 
